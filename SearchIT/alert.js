@@ -1,1 +1,0 @@
-confirm("Promise that you'll actually search something next time...")
