@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Select a Website Popup</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background: white;
+      width: 256px;
+      height: 135px;
+    }
+    .button {
+      width: 125px;
+      height: 24px;
+      border-radius: 4px;
+      font-family: Lucida Grande;
+      background-color: #cccccc;
+      text-align: center;
+      padding: 0px;
+      outline: none;
+      border: 1px solid black;
+    }
+    #stack {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+    }
+    
+    #github {
+      position: absolute;
+      top: 28px;
+      left: 2px;
+    }
+    
+    #wolfram {
+      position: absolute;
+      top: 54px;
+      left: 2px;
+    }
+    
+    #wiki {
+      position: absolute;
+      top: 80px;
+      left: 2px;
+    }
+    
+    #youtube {
+      position: absolute;
+      top: 2px;
+      left: 129px;
+    }
+    
+    #reddit {
+      position: absolute;
+      top: 28px;
+      left: 129px;
+    }
+    
+    #twitter {
+      position: absolute;
+      top: 54px;
+      left: 129px;
+    }
+    
+    #google {
+      position: absolute;
+      top: 80px;
+      left: 129px;
+    }
+    
+    .btnimg {
+      float: left;
+      margin-left: 3px;
+    }
+    .button:hover {
+      background-color: #9bc3e4;
+    }
+    
+    .onoffswitch {
+      position: absolute; 
+      width: 60px;
+      outline: none;
+      top: 108px;
+      right: 3px;
+    }
+    
+    .onoffswitch-checkbox {
+      display: none;
+    }
+    .onoffswitch-label {
+      display: block; overflow: hidden; cursor: pointer;
+      border: 2px solid #999999; border-radius: 50px;
+    }
+    .onoffswitch-inner {
+      display: block; width: 200%; margin-left: -100%;
+      transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+      display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+      font-size: 15px; color: white; font-family: Lucida Grande; font-weight: bold;
+      box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+      content: "ON";
+      padding-left: 8px;
+      background-color: #E0E0E0; color: #999999;
+    }
+    .onoffswitch-inner:after {
+      content: "OFF";
+      padding-right: 4px;
+      background-color: #E0E0E0; color: #999999;
+      text-align: right;
+    }
+    .onoffswitch-switch {
+      display: block; width: 10px; margin: 5px;
+      background: #FF3B3B;
+      position: absolute; top: 0; bottom: 0;
+      right: 36px;
+      border: 2px solid #999999; border-radius: 50px;
+      transition: all 0.3s ease-in 0s; 
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+      margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+      right: 0px; 
+      background-color: #1CE837; 
+    }
+    
+    div.textlabel {
+      position: absolute;
+      top: 110px;
+      right: 80px;
+      font-family: Lucida Grande;
+      font-size: 15px;
+      font-variant: small-caps;
+    }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <button id="stack" class="button"><img class="btnimg" src="/favicons/stack.png">Stack Overflow</button>
+    <button id="youtube" class="button"><img class="btnimg" src="/favicons/youtube.png">YouTube</button>
+    <button id="wolfram" class="button"><img class="btnimg" src="/favicons/wolfram.png">Wolfram Alpha</button>
+    <button id="github" class="button"><img class="btnimg" src="/favicons/github.png">GitHub</button>
+    <button id="wiki" class="button"><img class="btnimg" src="/favicons/wiki.png">Wikipedia</button>
+    <button id="google" class="button"><img class="btnimg" src="/favicons/google.png">Google</button>
+    <button id="reddit" class="button"><img class="btnimg" src="/favicons/reddit.png">Reddit</button>
+    <button id="twitter" class="button"><img class="btnimg" src="/favicons/twitter.png">Twitter</button>
+    
+    <div class="textlabel"><b>Open in current tab</b></div>
+    
+    <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+    </div>
+    
+  </body>
+</html>
