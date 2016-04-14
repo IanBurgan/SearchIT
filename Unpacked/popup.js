@@ -21,9 +21,15 @@ function getQuery(url) {
   var isTwitter = url.search("twitter.com");
   
   if (isGoogle != -1) {                          // GOOGLE
-    var start = url.search("q=");
+    var start = url.search("#q=");
     if (start != -1) {
-      var query = url.substring(start + 2);
+      var rest = url.substring(start + 3);
+      var end = rest.search("&")
+      if (end != -1) {
+        var query = rest.substring(0, end);
+      } else {
+        var query = rest;
+      }
       query = query.replace(/%20/g, "+");
     }
     
@@ -88,7 +94,7 @@ function getQuery(url) {
     }
   }
   
-  
+  console.log("Query:", query)
   direct(query);
 }
 
@@ -125,25 +131,25 @@ function getCurrentTabUrl(callback) {
 function direct(query) {
   switch (dest) {
     case "stack":
-      var target = "http://stackoverflow.com/search?q=".concat(query);
+      var target = "https://stackoverflow.com/search?q=".concat(query);
       break;
     case "youtube":
-      var target = "http://www.youtube.com/results?search_query=".concat(query);
+      var target = "https://www.youtube.com/results?search_query=".concat(query);
       break;
     case "wiki":
-      var target = "http://en.wikipedia.org/wiki/Special:Search?search=".concat(query);
+      var target = "https://en.wikipedia.org/wiki/Special:Search?search=".concat(query);
       break;
     case "google":
-      var target = "http://www.google.com/search?q=".concat(query);
+      var target = "https://www.google.com/#q=".concat(query);
       break;
     case "github":
-      var target = "http://github.com/search?q=".concat(query);
+      var target = "https://github.com/search?q=".concat(query);
       break;
     case "wolfram":
-      var target = "http://www.wolframalpha.com/input/?i=".concat(query);
+      var target = "https://www.wolframalpha.com/input/?i=".concat(query);
       break;
     case "reddit":
-      var target = "http://www.reddit.com/search?q=".concat(query);
+      var target = "https://www.reddit.com/search?q=".concat(query);
       break;
     case "twitter":
       var target = "https://twitter.com/search?q=".concat(query);
