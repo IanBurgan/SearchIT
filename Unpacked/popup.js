@@ -21,9 +21,9 @@ function getQuery(url) {
   var isTwitter = url.search("twitter.com");
   
   if (isGoogle != -1) {                          // GOOGLE
-    var start = url.search("#q=");
+    var start = url.search("q=");
     if (start != -1) {
-      var rest = url.substring(start + 3);
+      var rest = url.substring(start + 2);
       var end = rest.search("&")
       if (end != -1) {
         var query = rest.substring(0, end);
