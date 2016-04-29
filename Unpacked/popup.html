@@ -25,70 +25,73 @@
       outline: none;
       border: 1px solid black;
     }
+    .button:hover {
+      background-color: #9bc3e4;
+    }
+    .button:active {
+      margin-top: 1px;
+    }
     #stack {
       position: absolute;
       top: 2px;
       left: 2px;
     }
-    
+
     #github {
       position: absolute;
       top: 28px;
       left: 2px;
     }
-    
+
     #wolfram {
       position: absolute;
       top: 54px;
       left: 2px;
     }
-    
+
     #wiki {
       position: absolute;
       top: 80px;
       left: 2px;
     }
-    
+
     #youtube {
       position: absolute;
       top: 2px;
       left: 129px;
     }
-    
+
     #reddit {
       position: absolute;
       top: 28px;
       left: 129px;
     }
-    
+
     #twitter {
       position: absolute;
       top: 54px;
       left: 129px;
     }
-    
+
     #google {
       position: absolute;
       top: 80px;
       left: 129px;
     }
-    
+
     .btnimg {
       float: left;
       margin-left: 3px;
     }
-    .button:hover {
-      background-color: #9bc3e4;
-    }
-    
+
     .onoffswitch {
-      position: absolute; 
+      position: absolute;
       width: 60px;
       outline: none;
       top: 108px;
       right: 3px;
     }
-    
+
     .onoffswitch-checkbox {
       display: none;
     }
@@ -122,16 +125,16 @@
       position: absolute; top: 0; bottom: 0;
       right: 36px;
       border: 2px solid #999999; border-radius: 50px;
-      transition: all 0.3s ease-in 0s; 
+      transition: all 0.3s ease-in 0s;
     }
     .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
       margin-left: 0;
     }
     .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-      right: 0px; 
-      background-color: #1CE837; 
+      right: 0px;
+      background-color: #1CE837;
     }
-    
+
     div.textlabel {
       position: absolute;
       top: 110px;
@@ -152,9 +155,9 @@
     <button id="google" class="button"><img class="btnimg" src="/favicons/google.png">Google</button>
     <button id="reddit" class="button"><img class="btnimg" src="/favicons/reddit.png">Reddit</button>
     <button id="twitter" class="button"><img class="btnimg" src="/favicons/twitter.png">Twitter</button>
-    
+
     <div class="textlabel"><b>Open in current tab</b></div>
-    
+
     <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
     <label class="onoffswitch-label" for="myonoffswitch">
@@ -162,6 +165,6 @@
         <span class="onoffswitch-switch"></span>
     </label>
     </div>
-    
+
   </body>
 </html>
