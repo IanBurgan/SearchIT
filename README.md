@@ -1,5 +1,5 @@
 # SearchIT
-Dowload the crx file and drag and drop it into the chrome extensions page to add the extension to your browser.
+The extension is available for download for Google Chrome [here](https://chrome.google.com/webstore/detail/searchit/fioambgbhedmjhlobdibcbhfjojjccoa).
 
 A demonstration of the extension in action:
 https://youtu.be/u3wF6nHZZvA
