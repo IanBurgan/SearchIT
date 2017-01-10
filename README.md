@@ -15,3 +15,6 @@ need access to the current url to be able to search what you just searched.
 
 ### What if I want to install it myself from this source code?
 Open extensions in Chrome, turn on developer mode, load in the source as an unpacked extension.
+
+### Can I change modify this or port it to some other browser?
+Absolutely! Please let me know so that I can check it out if you do.
