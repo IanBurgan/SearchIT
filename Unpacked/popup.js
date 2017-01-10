@@ -6,7 +6,7 @@ function click(e) {
   dest = e.target.id
   console.log(dest)
   getCurrentTabUrl(getQuery)
-  
+
   //window.close();
 }
 
@@ -18,8 +18,9 @@ function getQuery(url) {
   var isGitHub = url.search("github.com");
   var isWolfram = url.search("wolframalpha.com");
   var isReddit = url.search("reddit.com");
+  var isHacker = url.search("hn.algolia.com");
   var isTwitter = url.search("twitter.com");
-  
+
   if (isGoogle != -1) {                          // GOOGLE
     var start = url.search("q=");
     if (start != -1) {
@@ -32,16 +33,16 @@ function getQuery(url) {
       }
       query = query.replace(/%20/g, "+");
     }
-    
+
   } else if (isStack != -1) {                    // STACKOVERFLOW
     var start = url.search("q=");
     if (start != -1) {
       var query = url.substring(start + 2);
     }
-    
+
   } else if (isWiki != -1) {                     // WIKIPEDIA
     var start = url.search("search=");
-    
+
     if (start == -1) { // if it's not a search
       start = url.search("wiki/");
       if (start != -1) {
@@ -53,7 +54,7 @@ function getQuery(url) {
       var end = rest.search("&");
       var query = rest.substring(0,end);
     }
-    
+
   } else if (isYoutube != -1) {                  // YOUTUBE
     var start = url.search("search_query=");
     if (start != -1) {
@@ -80,6 +81,17 @@ function getQuery(url) {
     if (start != -1) {
       var query = url.substring(start + 2);
     }
+  } else if (isHacker != -1) {                   // HACKER NEWS
+    var start = url.search("query=");
+    if (start != -1) {
+      var rest = url.substring(start + 6);
+      var end = rest.search("&");
+      if (end != -1) {
+        var query = rest.substring(0,end);
+      } else {
+        var query = rest;
+      }
+    }
   } else if (isTwitter != -1) {                  // TWITTER
     var start = url.search("q=");
     if (start != -1) {
@@ -93,7 +105,7 @@ function getQuery(url) {
       query = query.replace(/%20/g, "+");
     }
   }
-  
+
   console.log("Query:", query)
   direct(query);
 }
@@ -148,15 +160,15 @@ function direct(query) {
     case "wolfram":
       var target = "https://www.wolframalpha.com/input/?i=".concat(query);
       break;
-    case "reddit":
-      var target = "https://www.reddit.com/search?q=".concat(query);
+    case "hackernews":
+      var target = "https://hn.algolia.com/?query=".concat(query);
       break;
     case "twitter":
       var target = "https://twitter.com/search?q=".concat(query);
     default:
       console.log("Who put that button there?");
   }
-  
+
   if (query == null) {
     chrome.tabs.executeScript(null,{file: "alert.js"});
   } else {
@@ -165,7 +177,7 @@ function direct(query) {
     } else {
       chrome.tabs.create({url: target});
     }
-  } 
+  }
 }
 
 function toggle() {
