@@ -1,7 +1,9 @@
 # SearchIT
 Get it on [Google Chrome](https://chrome.google.com/webstore/detail/searchit/fioambgbhedmjhlobdibcbhfjojjccoa).
+SearchIT is an extension that is designed to make your life a little bit easier
+when you're searching for something on the web.
 
-### What is it for?
+### What does it do?
 Sometimes you want to search the same thing across multiple sites. Search whatever
 you want on one of the supported sites, open the extension window, select a site,
 and whatever you initially searched will then be searched for on the site that
