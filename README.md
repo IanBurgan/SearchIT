@@ -11,7 +11,9 @@ and whatever you initially searched will then be searched for on the site that
 you selected. You also have the option to open the search in a new tab.
 
 #### Screenshots
-![Title](https://lh3.googleusercontent.com/NSYmN3rxazfFMgnbkRU2esRJ-cw2vMaKh279aPFzuyN-lo619KkxlEqsdB3hkgpPRYQEiKaeHaQ=s1280-h800-e365)
+![First](https://lh3.googleusercontent.com/NSYmN3rxazfFMgnbkRU2esRJ-cw2vMaKh279aPFzuyN-lo619KkxlEqsdB3hkgpPRYQEiKaeHaQ=s1280-h800-e365)
+![Second](https://lh3.googleusercontent.com/etZ_lXsIR6hOcZSUuqvvPBRNg7kfHxYdGdj91DF5CwTsspuoIPq1n2uovg5dRyAMPwaC6Wk3Uz4=s1280-h800-e365)
+![Third](https://lh3.googleusercontent.com/YOA__sgsAFeLb0mgKEz3pOWTY-xE9sl4uvKFojrSUDXtKulQWmvK0lzKTRwBEYxxt2e42J4WdPI=s1280-h800-e365)
 
 ### Why does it need to access my browsing history?
 The extension doesn't need access to your browser history per se, but it does
