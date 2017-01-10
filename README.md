@@ -13,8 +13,10 @@ you selected. You also have the option to open the search in a new tab.
 #### Screenshots
 Search somehting
 ![First](https://lh3.googleusercontent.com/NSYmN3rxazfFMgnbkRU2esRJ-cw2vMaKh279aPFzuyN-lo619KkxlEqsdB3hkgpPRYQEiKaeHaQ=s1280-h800-e365)
+
 Automatically search a different site
 ![Second](https://lh3.googleusercontent.com/etZ_lXsIR6hOcZSUuqvvPBRNg7kfHxYdGdj91DF5CwTsspuoIPq1n2uovg5dRyAMPwaC6Wk3Uz4=s1280-h800-e365)
+
 And another!
 ![Third](https://lh3.googleusercontent.com/YOA__sgsAFeLb0mgKEz3pOWTY-xE9sl4uvKFojrSUDXtKulQWmvK0lzKTRwBEYxxt2e42J4WdPI=s1280-h800-e365)
 
