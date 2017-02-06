@@ -11,7 +11,7 @@ and whatever you initially searched will then be searched for on the site that
 you selected. You also have the option to open the search in a new tab.
 
 #### Screenshots
-Search somehting
+Search something
 ![First](https://lh3.googleusercontent.com/NSYmN3rxazfFMgnbkRU2esRJ-cw2vMaKh279aPFzuyN-lo619KkxlEqsdB3hkgpPRYQEiKaeHaQ=s1280-h800-e365)
 
 Automatically search a different site
