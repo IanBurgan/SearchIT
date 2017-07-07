@@ -102,7 +102,7 @@ function getQuery(url) {
       } else {
         var query = rest;
       }
-      query = query.replace(/%20/g, "+");
+      query = encodeURIComponent(query);
     }
   }
 
